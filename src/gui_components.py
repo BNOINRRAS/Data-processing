@@ -253,7 +253,7 @@ class App:
 
         pulses_start, pulses_end, pulses_peak, pedestals_mean = processing.find_pulse(oscillograms)
         # oscillograms = processing.shift_to_zero(oscillograms, pedestals_mean) # Optional
-        amplitudes, charges = processing.calc_AQ(oscillograms, pulses_start, pulses_end)
+        amplitudes, charges = processing.calc_AQ(oscillograms, pulses_start, pulses_end, pulses_peak, pedestals_mean)
 
         min_value, max_value, peak_time = find_minA_maxA_peakT(oscillograms)
         ordered_planes, ordered_peaks = find_ordered_triggered_planes(pulses_peak)

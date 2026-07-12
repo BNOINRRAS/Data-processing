@@ -194,7 +194,7 @@ def axes_to_V_s(): # Файл processing.py
   После того как мы получим эти коэффициенты мы должны применять их в дальнейших расчетах.
   Далее мы должны считать амплитуды и заряды найденных импульсов (в мВ и пКл) внутри функции:
 ```python
-def calc_AQ(oscillograms, pulses_start, pulses_end): # Файл processing.py
+def calc_AQ(oscillograms, pulses_start, pulses_end, pulses_peak, pedestals_mean): # Файл processing.py
 ```
 
   Данные в графике у нас будут представлены в мВ (амплитуда), нс (время), пКл (заряд).

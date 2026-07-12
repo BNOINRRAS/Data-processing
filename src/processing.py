@@ -122,7 +122,7 @@ def axes_to_V_s():
     return to_V, to_s
 
 
-def calc_AQ(oscillograms, pulses_start, pulses_end):
+def calc_AQ(oscillograms, pulses_start, pulses_end, pulses_peak, pedestals_mean):
     amplitudes = []
     charges = []
     for i in range(len(oscillograms)):
@@ -131,6 +131,7 @@ def calc_AQ(oscillograms, pulses_start, pulses_end):
         if pulses_start[i] is not None and pulses_end[i] is not None:
             left_border = 0
             right_border = 0
+
             # Integrate here (from left_border to right_border)
             left_border = max(PEDESTAL_RANGE, pulses_start[i] + START_SHIFT)
             right_border = pulses_end[i] + END_SHIFT
