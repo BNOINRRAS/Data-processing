@@ -197,4 +197,4 @@ def axes_to_V_s(): # Файл processing.py
 def calc_AQ(oscillograms, pulses_start, pulses_end, pulses_peak, pedestals_mean): # Файл processing.py
 ```
 
-  Данные в графике у нас будут представлены в мВ (амплитуда), нс (время), пКл (заряд).
+  Данные у нас будут представлены в мВ (амплитуда), нс (время), пКл (заряд).
