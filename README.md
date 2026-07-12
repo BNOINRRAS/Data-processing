@@ -102,7 +102,7 @@ pulse_end_index + END_SHIFT
 
   Таким образом мы расширили область c импульсом так что импульс должен полностью уместиться внутри.
 
-  *В нашем текущем коде определение этих точек осуществляется для осциллограмм с импульсами в теле функции `calc_AQ(oscillograms, pulses_start, pulses_end)` внутри цикла:*
+  *В нашем текущем коде определение этих точек осуществляется для осциллограмм с импульсами в теле функции `calc_AQ(oscillograms, pulses_start, pulses_end, pulses_peak, pedestals_mean)` внутри цикла:*
 ```python
 for i in range(len(oscillograms)):
 ```
